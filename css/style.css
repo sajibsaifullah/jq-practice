@@ -1,0 +1,84 @@
+/* Example-07 */
+#ex-7 h5{
+    display: none;
+}
+
+/* Example-09 */
+#ex-9 .red, #ex-9 .green, #ex-9 .blue{
+    display: none;
+}
+.red{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.green{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+.blue{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+/* Example-13 */
+.flip{
+    padding: 5px 0;
+    width: 700px;
+    text-align: center;
+    background-color: #f582f5;
+    border: 1px solid black;
+}
+.panel{
+    padding: 50px 0;
+    width: 700px;
+    text-align: center;
+    background-color: #d9a4d9;
+    border: 1px solid black;
+}
+.panel-13{
+    display: none;
+}
+
+/* Example-16 */
+.box{
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+    background-color: #9d7ede;
+    border: 5px solid #6f40ce;
+}
+
+/* Example-18 */
+.box-18{
+    margin-top: 30px;
+    width: 80%;
+    height: 200px;
+    background-color: #6f40ce;
+}
+
+/* Example-21 */
+#ex-21 p{
+    padding: 40px 0;
+    width: 200px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #9d7ede;
+    border: 1px solid #6f40ce;
+}
+
+/* Example-33,34,35 */
+.container-33, .container-34, .container-35{
+    padding: 40px 0;
+    width: 500px;
+    text-align: center;
+    background-color: #d9a4d9;
+}
+
+/* addClass */
+.backgroundColor, .background-color{
+    background-color: #f582f5;
+}

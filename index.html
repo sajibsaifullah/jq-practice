@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta data -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery Practice</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body class="container">
+    <h1 class="text-center text-primary mt-3">Hello JQuery</h1>
+
+    <!-- Example-01 -->
+    <div id="ex-1">
+      <h2>Example: 01: Simple Jquery</h2>
+      <p>If you click on me, I will disappear.</p>
+      <p>Click me away!</p>
+      <p>Click me too!</p>
+      <hr />
+    </div>
+
+    <!-- Example-02 -->
+    <div id="ex-2">
+      <h2>Example: 02: Using Element Selector</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <button type="button" class="btn btn-primary">
+        Click me to hide paragraphs
+      </button>
+      <hr />
+    </div>
+
+    <!-- Example-03 -->
+    <div id="ex-3">
+      <h2>Example: 03: Using Id Selector</h2>
+      <p id="ex-3-p1">paragraph 1.</p>
+      <p>paragraph 2.</p>
+      <p id="ex-3-p3">paragraph 3.</p>
+      <button type="button" class="btn btn-primary">Click me to hide</button>
+      <hr />
+    </div>
+
+    <!-- Example-04 -->
+    <div class="ex-4">
+      <h2>Example: 04: Using Class Selector</h2>
+      <p>paragraph 1.</p>
+      <p class="ex-4-p2">paragraph 2.</p>
+      <p>paragraph 3.</p>
+      <button type="button" class="btn btn-primary">Click me to hide</button>
+      <hr />
+    </div>
+
+    <!-- Example-05 -->
+    <div id="ex-5">
+      <h2>Example: 05: Show Alert</h2>
+      <button type="button" class="btn btn-primary">Show Alert</button>
+      <hr />
+    </div>
+
+    <!-- Example-06 -->
+    <div id="ex-6">
+      <h2>Example: 06: Hide Text</h2>
+      <h5>Lorem ipsum dolor sit amet.</h5>
+      <button type="button" class="btn btn-primary">Hide</button>
+      <hr />
+    </div>
+
+    <!-- Example-07 -->
+    <div id="ex-7">
+      <h2>Example: 07: Show Text</h2>
+      <h5>Lorem ipsum dolor sit amet.</h5>
+      <button type="button" class="btn btn-primary">Show</button>
+      <hr />
+    </div>
+
+    <!-- Example-08 -->
+    <div id="ex-8">
+      <h2>Example: 08: Toggle Text</h2>
+      <h5>Lorem ipsum dolor sit amet.</h5>
+      <button type="button" class="btn btn-primary">Toggle</button>
+      <hr />
+    </div>
+
+    <!-- Example-09 -->
+    <div id="ex-9">
+      <h2>Example: 09: Fade In</h2>
+      <div class="red red-9 mb-2"></div>
+      <div class="green green-9 mb-2"></div>
+      <div class="blue blue-9 mb-2"></div>
+      <button type="button" class="btn btn-primary">fade-in</button>
+      <hr />
+    </div>
+
+    <!-- Example-10 -->
+    <div id="ex-10">
+      <h2>Example: 10: Fade Out</h2>
+      <div class="red red-10 mb-2"></div>
+      <div class="green green-10 mb-2"></div>
+      <div class="blue blue-10 mb-2"></div>
+      <button type="button" class="btn btn-primary">fade-out</button>
+      <hr />
+    </div>
+
+    <!-- Example-11 -->
+    <div id="ex-11">
+      <h2>Example: 11: Fade Toggle</h2>
+      <div class="red red-11 mb-2"></div>
+      <div class="green green-11 mb-2"></div>
+      <div class="blue blue-11 mb-2"></div>
+      <button type="button" class="btn btn-primary">fade-toggle</button>
+      <hr />
+    </div>
+
+    <!-- Example-12 -->
+    <div id="ex-12">
+      <h2>Example: 12: Fade Toggle</h2>
+      <div class="red red-12 mb-2"></div>
+      <button type="button" class="btn btn-primary">fade-to</button>
+      <hr />
+    </div>
+
+    <!-- Example-13 -->
+    <div id="ex-13">
+      <h2>Example: 13: Slide Down</h2>
+      <div class="flip flip-13">Click to slide down panel</div>
+      <div class="panel panel-13">Hello world!</div>
+      <hr />
+    </div>
+
+    <!-- Example-14 -->
+    <div id="ex-14">
+      <h2>Example: 14: Slide Up</h2>
+      <div class="flip flip-14">Click to slide up panel</div>
+      <div class="panel panel-14">Hello world!</div>
+      <hr />
+    </div>
+
+    <!-- Example-15 -->
+    <div id="ex-15">
+      <h2>Example: 15: Slide Toggle</h2>
+      <div class="flip flip-15">Click to slide up panel</div>
+      <div class="panel panel-15">Hello world!</div>
+      <hr />
+    </div>
+
+    <!-- Example-16 -->
+    <div id="ex-16">
+      <h2>Example: 16: Animation</h2>
+      <button class="btn btn-primary">Start Animation</button>
+      <div class="box box-16"></div>
+      <hr />
+    </div>
+
+    <!-- Example-17 -->
+    <div id="ex-17">
+      <h2>Example: 17: Animate One by One</h2>
+      <button class="btn btn-primary">Start Animation</button>
+      <div class="box box-17"></div>
+      <hr />
+    </div>
+
+    <!-- Example-18 -->
+    <div id="ex-18">
+      <h2>Example: 18: Animate Toggle</h2>
+      <button class="btn btn-primary">Start Toggle</button>
+      <div class="box-18"></div>
+      <hr />
+    </div>
+
+    <!-- Example-19 -->
+    <div id="ex-19">
+      <h2>Example: 19: Stop Sliding</h2>
+      <button class="btn btn-primary mb-2">Stop Sliding</button>
+      <div class="flip flip-19">Click to slide</div>
+      <div class="panel panel-19">Hello world!</div>
+      <hr />
+    </div>
+
+    <!-- Example-20 -->
+    <div id="ex-20">
+      <h2>Example: 20: Callback</h2>
+      <h5>Lorem ipsum dolor sit amet.</h5>
+      <button type="button" class="btn btn-primary">Hide</button>
+      <hr />
+    </div>
+
+    <!-- Example-21 -->
+    <div id="ex-21">
+      <h2>Example: 21: Chaining</h2>
+      <p>Hello World!</p>
+      <button type="button" id="button-1" class="btn btn-primary">
+        Start Chaining
+      </button>
+      <button type="button" id="button-2" class="btn btn-info">Reset</button>
+      <hr />
+    </div>
+
+    <!-- Example-22 -->
+    <div id="ex-22">
+      <h2>Example: 22: Get Contents with text() Method</h2>
+      <button type="button" id="btn-1" class="btn btn-primary">
+        Get All Paragraph's Text
+      </button>
+      <button type="button" id="btn-2" class="btn btn-info">
+        Get First Paragraph's Text
+      </button>
+      <button type="button" id="btn-3" class="btn btn-secondary">
+        Get Last Paragraph's Text
+      </button>
+      <p>This is a paragraph.</p>
+      <p>This is another paragraph.</p>
+      <p class="extra">This is one more paragraph.</p>
+      <hr />
+    </div>
+
+    <!-- Example-23 -->
+    <div id="ex-23">
+      <h2>Example: 23: Set Contents with text() Method</h2>
+      <button type="button" id="btn-1" class="btn btn-primary">
+        Set All Paragraph's Text
+      </button>
+      <button type="button" id="btn-2" class="btn btn-info">
+        Set First Paragraph's Text
+      </button>
+      <button type="button" id="btn-3" class="btn btn-secondary">
+        Set empty class Paragraph's Text
+      </button>
+      <p>This is a test paragraph.</p>
+      <p>This is another test paragraph.</p>
+      <p class="empty"></p>
+      <hr />
+    </div>
+
+    <!-- Example-24 -->
+    <div id="ex-24">
+      <h2>Example: 24: Get HTML Contents with html() Method</h2>
+      <button type="button" class="btn btn-primary btn-1">
+        Get Paragraph's HTML Contents
+      </button>
+      <button type="button" class="btn btn-info btn-2">
+        Get Container's HTML Contents
+      </button>
+      <div id="container">
+        <h1>Hello World!</h1>
+        <p>The quick <b>brown fox</b> jumps over the lazy dog.</p>
+      </div>
+      <hr />
+    </div>
+
+    <!-- Example-25 -->
+    <div id="ex-25">
+      <h2>Example: 25: Set HTML Contents with html() Method</h2>
+      <button type="button" class="btn btn-primary">Write message</button>
+      <hr />
+    </div>
+
+    <!-- Example-26 -->
+    <div id="ex-26">
+      <h2>Example: 26: Get Attribute Value with attr() Method</h2>
+      <button type="button" class="btn btn-primary btn-1">
+        Get Link's HREF Attribute
+      </button>
+      <button type="button" class="btn btn-info btn-2">
+        Get Image ALT Attribute
+      </button>
+      <p class="mt-2"><a href="https://www.google.com/">Google</a></p>
+      <img id="nature" src="images/nature.jpg" alt="Nature" />
+      <hr />
+    </div>
+
+    <!-- Example-27 -->
+    <div id="ex-27">
+      <h2>Example: 27: Set Attribute Value with attr() Method</h2>
+      <p>
+        <label><input type="checkbox" /></label> I agree with terms and
+        conditions.
+      </p>
+      <button type="button" class="btn btn-primary">Check</button>
+      <hr />
+    </div>
+
+    <!-- Example-28 -->
+    <div id="ex-28">
+      <h2>Example: 28: Get the Values of Form Fields with val() Method</h2>
+      <input type="text" name="" id="" />
+      <br />
+      <button type="submit" class="btn btn-primary mt-2">Check Value</button>
+      <hr />
+    </div>
+
+    <!-- Example-29 -->
+    <div id="ex-29">
+      <h2>Example: 29: Set the Values of Form Fields with val() Method</h2>
+      <button type="submit" class="btn btn-primary btn-1 mb-2">Dhaka</button>
+      <button type="submit" class="btn btn-primary btn-2 mb-2">Rajshahi</button>
+      <button type="submit" class="btn btn-primary btn-3 mb-2">Barisal</button>
+      <br />
+      <input type="text" name="" id="" />
+      <hr />
+    </div>
+
+    <!-- Example-30 -->
+    <div id="ex-30">
+      <h2>Example: 30: jQuery append() Method</h2>
+      <button type="submit" class="btn btn-primary mb-2">Insert Text</button>
+      <div class="container-30">
+        <h5>Lorem ipsum dolor sit amet.</h5>
+        <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h5>
+      </div>
+      <hr />
+    </div>
+
+    <!-- Example-31 -->
+    <div id="ex-31">
+      <h2>Example: 31: jQuery prepend() Method</h2>
+      <button type="submit" class="btn btn-primary mb-2">Insert Text</button>
+      <div class="container-31">
+        <h5>Lorem ipsum dolor sit amet.</h5>
+        <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h5>
+      </div>
+      <hr />
+    </div>
+
+    <!-- Example-32 -->
+    <div id="ex-32">
+      <h2>Example: 32: jQuery before() & after() Method</h2>
+      <div class="text-center">
+        <h1 class="d-inline-block">Hello World</h1>
+        <br />
+        <button type="button" class="btn btn-primary btn-1 insert-before">
+          Insert Before
+        </button>
+        <button type="button" class="btn btn-info btn-2 insert-after">
+          Insert After
+        </button>
+      </div>
+      <hr />
+    </div>
+
+    <!-- Example-33 -->
+    <div id="ex-33">
+      <h2>Example: 33: jQuery empty() Method</h2>
+      <div class="container-33">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+          maiores.
+        </p>
+        <button class="btn btn-primary">empty container</button>
+      </div>
+      <hr />
+    </div>
+
+    <!-- Example-34 -->
+    <div id="ex-34">
+      <h2>Example: 34: jQuery remove() Method</h2>
+      <div class="container-34">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+          maiores.
+        </p>
+        <button class="btn btn-primary">remove paragraph</button>
+      </div>
+      <hr />
+    </div>
+
+    <!-- Example-35 -->
+    <div id="ex-35">
+      <h2>Example: 35: jQuery remove() Method</h2>
+      <div class="container-35">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+          maiores.
+        </p>
+        <button class="btn btn-primary">unwrap container</button>
+      </div>
+      <hr />
+    </div>
+
+    <!-- Example-36 -->
+    <div id="ex-36">
+      <h2>Example: 36: jQuery addClass() Method</h2>
+      <h1>Lorem, ipsum dolor.</h1>
+      <button class="btn btn-primary">add class</button>
+      <hr />
+    </div>
+
+    <!-- Example-37 -->
+    <div id="ex-37">
+      <h2>Example: 37: jQuery removeClass() Method</h2>
+      <h1 class="background-color">Lorem, ipsum dolor.</h1>
+      <button class="btn btn-primary">remove class</button>
+      <hr />
+    </div>
+
+    <!-- Example-38 -->
+    <div id="ex-38">
+      <h2>Example: 38: jQuery toggleClass() Method</h2>
+      <h1 class="background-color">Lorem, ipsum dolor.</h1>
+      <button class="btn btn-primary">remove class</button>
+      <hr />
+    </div>
+
+    <!-- Example-39 -->
+    <div id="ex-39">
+      <h2>Example: 39: Addition</h2>
+      <input type="number" name="" id="num-1" />
+      <input type="number" name="" id="num-2" />
+      <br />
+      <button class="btn btn-info my-2">Calculate</button>
+      <h5 id="r-39">Result</h5>
+      <hr />
+    </div>
+
+    <!-- Example-40 -->
+    <div id="ex-40">
+      <h2>Example: 40: Subtraction</h2>
+      <input type="number" name="" id="num-1" />
+      <input type="number" name="" id="num-2" />
+      <br />
+      <button class="btn btn-info my-2">Calculate</button>
+      <h5 id="r-40">Result</h5>
+      <hr />
+    </div>
+
+    <!-- Example-41 -->
+    <div id="ex-41">
+      <h2>Example: 41: Multiplication</h2>
+      <input type="number" name="" id="num-1" />
+      <input type="number" name="" id="num-2" />
+      <br />
+      <button class="btn btn-info my-2">Calculate</button>
+      <h5 id="r-41">Result</h5>
+      <hr />
+    </div>
+
+    <!-- Example-42 -->
+    <div id="ex-42">
+      <h2>Example: 42: Division</h2>
+      <input type="number" name="" id="num-1" />
+      <input type="number" name="" id="num-2" />
+      <br />
+      <button class="btn btn-info my-2">Calculate</button>
+      <h5 id="r-42">Result</h5>
+      <hr />
+    </div>
+
+    <!-- Example-43 -->
+    <div id="ex-43">
+      <h2>Example: 43: Inch to Feet</h2>
+      <input type="number" name="" id="num" />
+      inch
+      <br />
+      <button class="btn btn-info my-2">Convert</button>
+      <h5>Result: <span id="r-43">0</span> ft</h5>
+      <hr />
+    </div>
+
+    <!-- Example-44 -->
+    <div id="ex-44">
+      <h2>Example: 44: Mile to Km</h2>
+      <input type="number" name="" id="num" />
+      mile
+      <br />
+      <button class="btn btn-info my-2">Convert</button>
+      <h5>Result: <span id="r-44">0</span> km</h5>
+      <hr />
+    </div>
+
+    <!-- Example-45 -->
+    <div id="ex-45">
+      <h2>Example: 45: Check Even or Odd</h2>
+      <input type="number" name="" id="num" />
+      <br />
+      <button class="btn btn-info my-2">Check</button>
+      <h5 id="r-45">Result</h5>
+      <hr />
+    </div>
+
+    <!-- Example-46 -->
+    <div id="ex-46">
+      <h2>Example: 46: Check Leap Year</h2>
+      <input type="number" name="" id="num" />
+      <br />
+      <button class="btn btn-info my-2">Check</button>
+      <h5 id="r-46">Result</h5>
+      <hr />
+    </div>
+
+    <!-- Example-47 -->
+    <div id="ex-47">
+      <h2 class="pb-3">Example: 47: Triangle Area Calculation</h2>
+      <img src="images/triangle.png" alt="" class="img-fluid" />
+      <p class="pt-3 fw-semibold">Area (A) = 0.5 X b X h</p>
+      <p>b = <span id="base">10 </span>unit</p>
+      <p>h = <span id="height">5 </span>unit</p>
+      <button type="button" class="btn btn-primary my-3" id="triangle">
+        Calculate
+      </button>
+      <h5>Result: <span id="r-47">0</span> unit</h5>
+      <hr />
+    </div>
+
+    
+    <!-- Example-48 -->
+    <div id="ex-48">
+        <h2 class="pb-3">Example: 48: Rectangle Area Calculation</h2>
+        <img src="images/rectangle.png" alt="" class="img-fluid">
+        <p class="pt-3 fw-semibold">Area (A) = w X l</p>
+        <p> w = <span id="width">15 </span>unit</p>
+        <p> l = <span id="length">10 </span>unit</p>
+        <button type="button" class="btn btn-primary my-3" id="rectangle">Calculate</button>
+        <h5>Result: <span id="r-48">0</span> unit</h5>
+        <hr>
+    </div>
+    
+    <!-- Example-49 -->
+    <div id="ex-49">
+        <h2>Example: 49: Change Status</h2>
+        <p id="default-post" class="fs-4">Good Morning Everyone</p>
+        <textarea name="" id="post-text" placeholder=" Type Post" cols="60" rows="3"></textarea>
+        <br>
+        <button type="submit" class="btn btn-primary" id="btn-post">Post</button>
+        <hr>
+    </div>
+
+    <!-- Example-50 -->
+    <div id="ex-50">
+        <h2>Example: 50: Post New Comment</h2>
+        <div id="comment-container">
+            <p class="fs-4 mb-0">Lorem ipsum dolor sit amet.</p>
+            <p class="fs-4 mb-0">Lorem ipsum dolor sit amet.</p>
+            <p class="fs-4 mb-0">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <textarea name="" id="new-comment" placeholder=" Type Your Comment" class="mt-3" cols="60" rows="3"></textarea>
+        <br>
+        <button type="submit" class="btn btn-primary" id="btn-new-comment">Post</button>
+        <hr>
+    </div>
+
+    <!-- js script -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
